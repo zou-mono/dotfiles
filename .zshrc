@@ -89,9 +89,9 @@ alias cnpm="npm --registry=https://registry.npm.taobao.org \
   --disturl=https://npm.taobao.org/dist \
   --userconfig=$HOME/.cnpmrc"
 
-export MANPATH=${MANPATH}:/usr/local/texlive/2017/texmf-dist/doc/man
-export INFOPATH=${INFOPATH}:/usr/local/texlive/2017/texmf-dist/doc/info
-export PATH=${PATH}:/usr/local/texlive/2017/bin/x86_64-linux
+export MANPATH=${MANPATH}:/home/mono/Softwares/texlive/2017/texmf-dist/doc/man
+export INFOPATH=${INFOPATH}:/home/mono/Softwares/texlive/2017/texmf-dist/doc/info
+export PATH=${PATH}:/home/mono/Softwares/texlive/2017/bin/x86_64-linux
 
 
 export PATH="/home/mono/.pyenv/bin:$PATH"
@@ -106,3 +106,9 @@ autoload -U compinit && compinit -u
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+export GTAGSCONF=/usr/local/share/gtags/gtags.conf
+export GTAGSLABEL=pygments
+
+export PATH=${PATH}:/home/mono/Softwares/bin
+
