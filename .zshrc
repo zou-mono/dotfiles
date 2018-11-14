@@ -51,7 +51,7 @@ ZSH_THEME="ys"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-syntax-highlighting)
+plugins=(git autojump zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -89,9 +89,9 @@ alias cnpm="npm --registry=https://registry.npm.taobao.org \
   --disturl=https://npm.taobao.org/dist \
   --userconfig=$HOME/.cnpmrc"
 
-export MANPATH=${MANPATH}:/home/mono/Softwares/texlive/2017/texmf-dist/doc/man
-export INFOPATH=${INFOPATH}:/home/mono/Softwares/texlive/2017/texmf-dist/doc/info
-export PATH=${PATH}:/home/mono/Softwares/texlive/2017/bin/x86_64-linux
+export MANPATH=${MANPATH}:/usr/local/texlive/2018/texmf-dist/doc/man
+export INFOPATH=${INFOPATH}:/usr/local/texlive/2018/texmf-dist/doc/info
+export PATH=${PATH}:/usr/local/texlive/2018/bin/x86_64-linux
 
 
 export PATH="/home/mono/.pyenv/bin:$PATH"
@@ -110,5 +110,5 @@ export NVM_DIR="$HOME/.nvm"
 export GTAGSCONF=/usr/local/share/gtags/gtags.conf
 export GTAGSLABEL=pygments
 
-export PATH=${PATH}:/home/mono/Softwares/bin
-
+export PATH=${PATH}:/opt/emacs/bin
+alias python=/usr/bin/python3.6
