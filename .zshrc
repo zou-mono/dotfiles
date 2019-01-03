@@ -85,9 +85,9 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 alias cnpm="npm --registry=https://registry.npm.taobao.org \
-  --cache=$HOME/.npm/.cache/cnpm \
-  --disturl=https://npm.taobao.org/dist \
-  --userconfig=$HOME/.cnpmrc"
+   --cache=$HOME/.npm/.cache/cnpm \
+   --disturl=https://npm.taobao.org/dist \
+   --userconfig=$HOME/.cnpmrc"
 
 export MANPATH=${MANPATH}:/usr/local/texlive/2018/texmf-dist/doc/man
 export INFOPATH=${INFOPATH}:/usr/local/texlive/2018/texmf-dist/doc/info
@@ -98,17 +98,23 @@ export PATH="/home/mono/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
-[[ -s /home/mono/.autojump/etc/profile.d/autojump.sh ]] && source /home/mono/.autojump/etc/profile.d/autojump.sh
-
-autoload -U compinit && compinit -u
-
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-export GTAGSCONF=/usr/local/share/gtags/gtags.conf
+export GTAGSCONF=/opt/global/share/gtags/gtags.conf
 export GTAGSLABEL=pygments
 
-export PATH=${PATH}:/opt/emacs/bin
-alias python=/usr/bin/python3.6
+export PATH=${PATH}:/opt/emacs/bin:/opt/the_silver_search/bin:/opt/ctags/bin:/opt/R/bin:/opt/global/bin
+# alias python=/usr/bin/python3.6
+
+JAVA_HOME=/opt/java/jdk1.8.0_191
+CLASSPATH=$JAVA_HOME/lib/
+PATH=$PATH:$JAVA_HOME/bin
+export PATH JAVA_HOME CLASSPATH
+
+[[ -s /home/mono/.autojump/etc/profile.d/autojump.sh ]] && source /home/mono/.autojump/etc/profile.d/autojump.sh
+
+autoload -U compinit && compinit -u
+

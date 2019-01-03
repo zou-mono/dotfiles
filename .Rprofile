@@ -22,5 +22,6 @@
 #  options(defaultPackages = c(old, "MASS"), repos = r)
 #})
 
-.libPaths("~/Softwares/R/3.4")
+.libPaths("~/Softwares/R/3.5.1")
+options(help_type = "html")
 # options(repos=structure(c(CRAN="http://mirrors.aliyun.com/CRAN/")))
